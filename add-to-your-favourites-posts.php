@@ -2,14 +2,12 @@
 /**
  * The file responsible for starting the Add to your favourites posts plugin
  *
- * The Online Magazine is a WordPress plugin that enable WordPress within the elements necessary
- * to manage efficiently an online magazine. online magazine is composed by issues delivered periodically.
- * Each issue contains article grouped by category/rubric.
+ * Wordpress plugin to add favourites posts functions. as usual not find an existing plugin meet my need at 100% so implementing my own.
  * *
  * @wordpress-plugin
- * Plugin Name: PLUGIN_NAME
- * Plugin URI: http://
- * Description: The Online Magazine is a plugin that enable WordPress within the elements necessary to manage efficiently an online magazine. online magazine is composed by issues delivered periodically. Each issue contains article grouped by category/rubric.
+ * Plugin Name: Add to your favourites posts
+ * Plugin URI: https://github.com/maronl/add-to-your-favourites-posts
+ * Description: Wordpress plugin to add favourites posts functions. as usual not find an existing plugin meet my need at 100% so implementing my own.
  * Version: 1.0.0
  * Author: Luca Maroni
  * Author URI: http://maronl.it
@@ -27,7 +25,7 @@ if (!defined('WPINC')) {
 /**
  * Include the core class responsible for loading all necessary components of the plugin.
  */
-require_once plugin_dir_path(__FILE__) . 'includes/class-add-to-your-favourites-posts-manager.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-atyfp-manager.php';
 
 /**
  * Instantiates the Add to your favourites posts Manager class and then
@@ -36,7 +34,7 @@ require_once plugin_dir_path(__FILE__) . 'includes/class-add-to-your-favourites-
 function run_PLUGIN_SLUG_NAME_UNDERSCORED_manager()
 {
 
-    $onlimag = new PLUGIN_CLASS_NAME_BASE_Manager();
+    $onlimag = new Atyfp_Manager();
     $onlimag->run();
 
 }

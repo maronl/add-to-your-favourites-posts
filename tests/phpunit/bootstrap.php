@@ -22,5 +22,5 @@ if ( getenv( 'TRAVIS' ) ) {
 //just trying to add it manually in travis-ci but i think it is not the perfect way
 // to load a plugin in this way just after the loading of all WordPress framework
 if ( getenv( 'TRAVIS' ) ) {
-    require '/tmp/wordpress/wp-content/plugins/PLUGIN_GIT_REP_NAME/PLUGIN_GIT_REP_NAME.php';
+    require '/tmp/wordpress/wp-content/plugins/add-to-your-favourites-posts/add-to-your-favourites-posts.php';
 }

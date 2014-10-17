@@ -1,7 +1,7 @@
 exports.config = {
     seleniumServerJar: 'selenium/selenium-server-standalone-2.42.2.jar',
 specs: [
-    'e2e/dist.js'
+    'e2e/wip.js'
 ],
 seleniumArgs: ['-browserTimeout=60'],
 capabilities: {

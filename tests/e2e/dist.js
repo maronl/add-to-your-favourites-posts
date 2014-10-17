@@ -4,7 +4,5 @@ describe('Hello World form', function() {
     beforeEach(function() {
         return browser.ignoreSynchronization = true;
     });
-
-	/ make your tests
-
+    
 });
