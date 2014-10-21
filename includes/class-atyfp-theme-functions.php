@@ -1,18 +1,20 @@
 <?php
 
-class Atyfp_Theme_Functions {
+class Atyfp_Theme_Functions
+{
 
-    function __construct() { }
+    function __construct()
+    {
+    }
 
-    public static function  define_theme_functions() {
-       /*
-	   if( ! function_exists( 'lps_get_related_posts' ) ) {
-            function lps_get_related_posts( $post ) {
-                $lps_data_model = Linking_Posts_Model::getInstance();
-                return $lps_data_model->get_related_posts( $post );
+    public static function  define_theme_functions()
+    {
+
+        if (!function_exists('atyfp_link')) {
+            function atyfp_link()
+            {
+                return '<a href="#">add to your favourites</a>';
             }
         }
-		*/
-
     }
-} 
+}

@@ -152,7 +152,7 @@ class Atyfp_Manager {
      * @access private
      */
     private function define_public_hooks() {
-
+        Atyfp_Theme_Functions::define_theme_functions();
 //        $public = new Single_Post_Meta_Manager_Public( $this->get_version() );
 //        $this->loader->add_action( 'the_content', $public, 'display_post_meta_data' );
 

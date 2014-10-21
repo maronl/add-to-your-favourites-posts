@@ -15,6 +15,7 @@ Wordpress plugin to add favourites posts functions. as usual not find an existin
 21/10/2014
 - create DB schema
 - manage DB creation and (updates with plugin?)
+- added function atyfp_link() now it has to be implemented
 
 17/10/2014
 - create options page
