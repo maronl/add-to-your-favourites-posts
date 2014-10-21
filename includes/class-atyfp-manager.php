@@ -160,8 +160,8 @@ class Atyfp_Manager {
 
 
     private function define_register_activation_hook() {
-        //$admin = new Credits_Coins_Manager_Admin( $this->version, $this->options, Credits_Coins_Model::getInstance());
-        //register_activation_hook( dirname( dirname( __FILE__ ) ) . '\credits-coins.php' , array( $admin, 'init_db_schema' ) );
+        $admin = new Atyfp_Manager_Admin( $this->version, $this->options, Atyfp_Model::getInstance());
+        register_activation_hook( dirname( dirname( __FILE__ ) ) . '\add-to-your-favourites-posts.php' , array( $admin, 'init_db_schema' ) );
     }
 
 
