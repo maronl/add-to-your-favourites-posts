@@ -6,12 +6,23 @@ Wordpress plugin to add favourites posts functions. as usual not find an existin
 
 ==Steps to complete version 1.0==
 - implement atyfp_link()
+    - enque atyfp.js for public side
+    - implement ajax atyfp-add
+    - implement ajax atyfp-remove
+    - implement js to manage ajax reponse above
+
 - add format parameter to atyfp_link()
 - implement ajax atyfp_add_favourite()
 
 
 
 ==Working hard :) ==
+24/10/2014
+- update main wp_query to retrieve the data associated to each posts and make them available in post data as
+    $post[favourites_counter] => 0
+    $post[myfavourite] => 0
+- implement rendering link add/remove favourite considering options plugin: image, counter
+
 21/10/2014
 - create DB schema
 - manage DB creation and (updates with plugin?)

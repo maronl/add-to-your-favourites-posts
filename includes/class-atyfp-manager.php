@@ -117,11 +117,15 @@ class Atyfp_Manager {
      */
     private function define_admin_hooks() {
 
-        $admin = new Atyfp_Manager_Admin( $this->version, $this->options, Atyfp_Model::getInstance());
+        $data_model = Atyfp_Model::getInstance();
+        $admin = new Atyfp_Manager_Admin( $this->version, $this->options, $data_model);
         $admin_options = new Atyfp_Manager_Options( $this->version, $this->options );
 
         $this->loader->add_action( 'admin_menu', $admin_options, 'add_plugin_options_page' );
         $this->loader->add_action( 'admin_init', $admin_options, 'options_page_init' );
+
+        $this->loader->add_filter( 'posts_join', $data_model, 'wp_query_join_atyfp_data' );
+        $this->loader->add_filter( 'posts_fields', $data_model, 'wp_query_fields_atyfp_data' );
 
         /*
         $admin = new Secure_Attachments_Manager_Admin( $this->version );
