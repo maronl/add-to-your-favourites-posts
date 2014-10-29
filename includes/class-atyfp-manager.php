@@ -159,6 +159,9 @@ class Atyfp_Manager {
         $public = new Atyfp_Manager_Public( $this->version, $this->options, Atyfp_Model::getInstance());
         $this->loader->add_action( 'init', $public, 'register_scripts' );
         $this->loader->add_action( 'wp_enqueue_scripts', $public, 'enqueue_scripts' );
+        $this->loader->add_action( 'wp_ajax_add_favourite_post', $public, 'add_favourite_post_ajax' );
+        $this->loader->add_action( 'wp_ajax_remove_favourite_post', $public, 'remove_favourite_post_ajax' );
+
 
         Atyfp_Theme_Functions::define_theme_functions();
 //        $public = new Single_Post_Meta_Manager_Public( $this->get_version() );

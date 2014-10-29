@@ -36,4 +36,21 @@ class Atyfp_Manager_Public {
         wp_enqueue_script('atyfp-public-js');
     }
 
+    function add_favourite_post_ajax() {
+        global $table_prefix, $wpdb; // this is how you get access to the database
+
+        echo "prova1";
+
+        die();
+
+    }
+
+    function remove_favourite_post_ajax() {
+        global $table_prefix, $wpdb; // this is how you get access to the database
+
+        echo "prova2";
+
+        die();
+
+    }
 }
