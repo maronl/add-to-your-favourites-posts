@@ -1,0 +1,27 @@
+{
+  "name": "add-to-your-favourites-posts",
+  "version": "1.0.0",
+  "description": "Wordpress plugin to add favourites posts functions. as usual not find an existing plugin meet my need at 100% so implementing my own.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maronl/add-to-your-favourites-posts.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "favourites posts",
+    "vote posts"
+  ],
+  "author": "Luca Maroni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maronl/add-to-your-favourites-posts/issues"
+  },
+  "homepage": "https://github.com/maronl/add-to-your-favourites-posts",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "protractor": "^0.24.2"
+  }
+}
