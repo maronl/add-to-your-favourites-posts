@@ -31,7 +31,7 @@ require_once plugin_dir_path(__FILE__) . 'includes/class-atyfp-manager.php';
  * Instantiates the Add to your favourites posts Manager class and then
  * calls its run method officially starting up the plugin.
  */
-function run_PLUGIN_SLUG_NAME_UNDERSCORED_manager()
+function run_atyfp_manager()
 {
 
     $onlimag = new Atyfp_Manager();
@@ -40,4 +40,4 @@ function run_PLUGIN_SLUG_NAME_UNDERSCORED_manager()
 }
 
 // Call the above function to begin execution of the plugin.
-run_PLUGIN_SLUG_NAME_UNDERSCORED_manager();
+run_atyfp_manager();
